@@ -104,11 +104,6 @@ export default function App() {
         <header className="hero">
           <div>
             <p className="eyebrow">Podcast Browser</p>
-            <h1>Search, sort, filter, and paginate without losing your place.</h1>
-            <p className="hero-copy">
-              Explore the podcast previews from the public API with a single,
-              synchronised state model for search, sorting, genre filtering, and page navigation.
-            </p>
           </div>
 
           <div className="hero-metrics" aria-label="Podcast summary">
