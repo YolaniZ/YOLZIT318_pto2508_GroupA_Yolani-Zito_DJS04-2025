@@ -414,10 +414,12 @@ a {
 
   .hero {
     grid-template-columns: 1fr;
+    padding: 1.5rem;
   }
 
   .controls-panel {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 1rem;
   }
 
   .genre-panel {
@@ -435,6 +437,20 @@ a {
   .podcast-card {
     grid-template-columns: 118px minmax(0, 1fr);
   }
+
+  .hero h1 {
+    max-width: 14ch;
+    font-size: clamp(2.2rem, 4.6vw, 3.8rem);
+  }
+
+  .hero-copy {
+    max-width: 58ch;
+    font-size: 0.98rem;
+  }
+
+  .results-header {
+    padding: 1rem 1.1rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -450,10 +466,62 @@ a {
     border-radius: 20px;
   }
 
+  .hero {
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+
+  .hero h1 {
+    max-width: none;
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .hero-copy {
+    margin-top: 0.85rem;
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .hero-metrics > div {
+    padding: 0.9rem 1rem;
+  }
+
   .controls-panel,
   .podcast-grid,
   .hero-metrics {
     grid-template-columns: 1fr;
+  }
+
+  .controls-panel {
+    gap: 0.85rem;
+    padding: 0.9rem;
+  }
+
+  .field input,
+  .field select {
+    padding: 0.82rem 0.95rem;
+  }
+
+  .genre-grid {
+    gap: 0.5rem;
+  }
+
+  .genre-chip {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .results-header {
+    padding: 0.95rem 1rem;
+  }
+
+  .results-header h2 {
+    font-size: 1.05rem;
+  }
+
+  .results-note {
+    max-width: none;
+    font-size: 0.92rem;
   }
 
   .genre-panel {
@@ -462,14 +530,32 @@ a {
 
   .podcast-card {
     grid-template-columns: 1fr;
+    border-radius: 20px;
   }
 
   .podcast-art {
     aspect-ratio: 16 / 9;
   }
 
+  .podcast-card-body {
+    gap: 0.65rem;
+    padding: 0.95rem;
+  }
+
+  .podcast-card h3 {
+    font-size: 1rem;
+  }
+
+  .podcast-description {
+    font-size: 0.92rem;
+  }
+
   .pagination {
     border-radius: 24px;
     padding-inline: 0.75rem;
+  }
+
+  .pagination button {
+    padding: 0.65rem 0.85rem;
   }
 }
