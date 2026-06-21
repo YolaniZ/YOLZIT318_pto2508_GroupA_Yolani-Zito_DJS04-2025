@@ -103,7 +103,7 @@ export default function App() {
       <main className="app-frame">
         <header className="hero">
           <div>
-            <p className="eyebrow">DSJ04 Podcast Browser</p>
+            <p className="eyebrow">Podcast Browser</p>
             <h1>Search, sort, filter, and paginate without losing your place.</h1>
             <p className="hero-copy">
               Explore the podcast previews from the public API with a single,
